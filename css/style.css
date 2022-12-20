@@ -1,0 +1,988 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Playfair+Display&family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap');
+
+/*fælles css for alle sider*/
+* {
+  margin: 0;
+  height: auto;
+}
+
+body {
+  min-width: 370px;
+  margin: 0;
+  background-color: rgb(209, 193, 163);
+}
+
+/*header*/
+header {
+  background-color: rgb(76, 70, 61);
+  height: 20%;
+}
+
+.logo-a {
+  width: 130%;
+  height: 130%;
+  border: 1px;
+  text-align: center;
+  padding-bottom: 5%;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+
+/*navbar*/
+.topnav {
+  display: grid;
+  grid-template-columns: 10% 20% 1fr 20% 20%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  height: auto;
+}
+
+.mylinks {
+  color: rgb(209, 193, 163);
+  font-family: 'Mukta', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  margin-block: auto;
+  font-size: 130%;
+}
+
+.produkter-wrapper {
+  height: max-content;
+  margin-block: auto;
+  text-align: center;
+  padding-right: 6%;
+}
+
+.hamburger-none {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  width: 10px;
+}
+
+#nav-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 100%;
+}
+
+#nav-item div {
+  display: block;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#nav-item {
+  display: block;
+  background-color: rgb(209, 193, 163);
+}
+
+#nav-item:not(.visible) {
+  display: none;
+}
+
+#nav-item a {
+  display: block;
+}
+
+/*Forside*/
+.velkomsttekst h2{
+  font-family:'Playfair Display', serif;
+  font-size: 200%;
+  display: flex;
+  padding-left: 44%;
+  padding-bottom: 5%;
+  padding-top: 7%;
+}
+
+.velkomsttekst p{
+  font-family:'Playfair Display', serif;
+  font-size: 160%;
+  display: flex;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  line-height: 170%;
+}
+
+/*infographic*/
+.infographic {
+  background-color: rgb(209, 193, 163);
+}
+
+.infographic1 {
+  width: 100%;
+}
+
+.infographic2 {
+  display: none;
+  width: 100%;
+}
+
+/*Teside*/
+
+.tebillede1 {
+  display: flex;
+  width: 20%;
+  height: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+}
+
+.tebillede2 {
+  display: flex;
+  width: 20%;
+  height: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+}
+
+.tebillede3 {
+  display: flex;
+  width: 20%;
+  height: 20%; 
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+}
+
+.hvidte {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5%;
+  flex-direction: column;
+}
+
+.hvidte h1{
+  display: flex;
+  font-family: 'Playfair Display', serif;
+  font-weight: bolder;
+  padding-bottom: 3%;
+  font-size: 170%;
+  padding-right: 6%;
+  
+  
+}
+
+.hvidte p{
+  display: flex;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 120%;
+  padding-right: 5%;
+  line-height: 200%;
+  
+}
+
+.sortte{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5%;
+  flex-direction: column;
+}
+
+.sortte h1{
+  display: flex;
+  font-family: 'Playfair Display', serif;
+  font-weight: bolder;
+  padding-bottom: 3%;
+  font-size: 170%;
+  padding-right: 6%;
+}
+
+.sortte p{
+  display: flex;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 120%;
+  padding-right: 5%;
+  line-height: 200%;
+}
+
+.groente{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5%;
+  flex-direction: column;
+}
+.groente h1{
+  display: flex;
+  font-family: 'Playfair Display', serif;
+  font-weight: bolder;
+  padding-bottom: 3%;
+  font-size: 170%;
+  padding-right: 6%;
+}
+
+.groente p{
+  display: flex;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 120%;
+  padding-right: 5%;
+  line-height: 200%;
+}
+   
+
+/*sommerkampagne*/
+
+.sommerkampagnebanner{
+  width: 100%;
+  margin-top: -12px;
+}
+
+.sommerprodukt{
+  display: block;
+  width: 30%;
+  height: 30%;
+  padding-left: 35%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.sommerkampagne-produkttekst{
+  font-family:'Playfair Display', serif;
+  font-size: 160%;
+  display: flex;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  line-height: 200%;
+}
+
+/*vinterkampagne*/
+.julekampagnebanner{
+  width: 100%;
+  margin-top: -18px;
+}
+
+
+.juleprodukt{
+  display: block;
+  width: 30%;
+  height: 30%;
+  padding-left: 35%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.vinterkampagne-produkttekst{
+  font-family:'Playfair Display', serif;
+  font-size: 160%;
+  display: flex;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  line-height: 200%;
+}
+
+/*vores produkter*/
+#voresprodukterbanner{
+  width: 100%;
+  margin-top: -18px;
+}
+
+.container-img{
+  float: left;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#sommerprodukt{
+  width: 20%;
+  padding-left: 10%;
+}
+
+#original-produkt{
+  width: 20%;
+  padding-left: 10%;
+}
+
+#vinterprodukt{
+  width: 20%;
+  padding-left: 10%;
+}
+
+.summerbreeze{
+  display: inline-block;
+  padding-left: 13%;
+  padding-bottom: 3%;
+  font-family: 'Playfair Display', serif;
+  font-size: 130%;
+}
+
+.blacktea{
+  display: inline-block;
+  padding-left: 30%;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 130%;
+}
+
+.winterspice{
+  padding-right: 14%;
+  float: right;
+  font-family: 'Playfair Display', serif;
+  font-size: 130%;
+}
+
+.ingredienser-summerbreeze{
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  width: 20%;
+  font-size: 110%;
+  padding-left: 10%;
+  text-align: center;
+  padding-bottom: 5%;
+  line-height: 200%;
+}
+
+.ingredienser-original{
+  display: inline-block;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  width: 20%;
+  font-size: 110%;
+  text-align: center;
+  padding-left: 10%;
+}
+
+.ingredienser-winterspice{
+  font-family: 'Playfair Display', serif;
+  width: 20%;
+  float: right;
+  font-size: 110%;
+  text-align: center;
+  padding-right: 9%;
+  line-height: 200%;
+}
+
+
+/*Footer*/
+
+footer {
+  background-color: rgb(76, 70, 61);
+  padding: 5%;
+  padding-bottom: 5%;
+  padding-top: 1%;
+}
+
+.kontakt h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 150% ;
+  color: rgb(209, 193, 163);
+  padding-top: 5%;
+}
+
+.footer-logo {
+  display: flex;
+  padding-left: 80%;
+  width: 20%;
+  margin-top: -20%;
+}
+
+#logo-id {
+  width: 90%;
+  height: 90%;
+}
+
+.info li {
+  list-style: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 80%;
+  color:rgb(209, 193, 163) ;
+  padding-top: 3%;
+  margin-left: -3%;
+}
+
+/*responsive*/
+
+@media screen and (min-width: 1250px) {
+ .logo{
+  width: 30%;
+ }
+}
+
+@media screen and (max-width: 1250px) {
+  .logo {
+    width: 30%;
+  }
+ .vinterkampagne-produkttekst{
+  font-size: 150%;
+ }
+ .sommerkampagne-produkttekst{
+  font-size: 150%;
+ }
+}
+
+@media screen and (max-width: 1100px) {
+  .logo {
+    width: 30%;
+  }
+
+ 
+  .blacktea{
+    padding-left: 0%;
+    font-size: 140%;
+   }
+  
+   .summerbreeze{
+    padding-left: 11%;
+    font-size: 140% ;
+   }
+  
+   .winterspice{
+    padding-right:11% ;
+    font-size: 140%;
+   }
+  
+   .ingredienser-summerbreeze{
+    font-size: 130%;
+   }
+   .ingredienser-original{
+    font-size: 130%;
+   }
+   .ingredienser-winterspice{
+    font-size: 130%;
+   }
+ 
+   .vinterkampagne-produkttekst{
+    font-size: 140%;
+   }
+   .sommerkampagne-produkttekst{
+    font-size: 140%;
+   }
+
+}
+
+@media screen and (max-width: 950px) {
+  .logo {
+    width: 25%;
+  }
+  .blacktea{
+    padding-left: 20%;
+    font-size: 130%;
+   }
+  
+   .summerbreeze{
+    padding-left: 11%;
+    font-size: 130% ;
+   }
+  
+   .winterspice{
+    padding-right:11% ;
+    font-size: 130%;
+   }
+  
+   .ingredienser-summerbreeze{
+    font-size: 120%;
+   }
+   .ingredienser-original{
+    font-size: 120%;
+   }
+   .ingredienser-winterspice{
+    font-size: 120%;
+   }
+   .vinterkampagne-produkttekst{
+    font-size: 130%;
+   }
+   .sommerkampagne-produkttekst{
+    font-size: 130%;
+   } 
+}
+
+@media screen and (max-width: 850px) {
+  .logo {
+    width: 30%;
+  }
+
+  .info li {
+    margin-left: -3%;
+  }
+ 
+  .blacktea{
+    padding-left: 15%;
+    font-size: 120%;
+   }
+  
+   .summerbreeze{
+    padding-left: 11%;
+    font-size: 120% ;
+   }
+  
+   .winterspice{
+    padding-right:11% ;
+    font-size: 120%;
+   }
+  
+   .ingredienser-summerbreeze{
+    font-size: 110%;
+   }
+   .ingredienser-original{
+    font-size: 110%;
+   }
+   .ingredienser-winterspice{
+    font-size: 110%;
+   }
+   .vinterkampagne-produkttekst{
+    font-size: 120%;
+   }
+   .sommerkampagne-produkttekst{
+    font-size: 120%;
+   } 
+}
+
+@media screen and (min-width:750px) {
+  .mylinks1 {
+    visibility: visible;
+  }
+
+  .mylinks2 {
+    visibility: visible;
+  }
+  .mylinks3 {
+    visibility: visible;
+  }
+  .mylinks4 {
+    display: block;
+  }
+
+  .hamburger-none {
+    display: none;
+  }
+
+  #nav-item {
+    display: none;
+    padding: 2%;
+  }
+
+  #nav-item div {
+    display: none;
+  }
+
+  .infographic1 {
+    width: 100%;
+    display: none;
+  }
+  
+  .infographic2 {
+    display: block;
+    width: 100%;
+  }
+
+  .blacktea{
+    padding-left: 15%;
+    font-size: 110%;
+   }
+  
+   .summerbreeze{
+    padding-left: 11%;
+    font-size: 110% ;
+   }
+  
+   .winterspice{
+    padding-right:11% ;
+    font-size: 110%;
+   }
+  
+   .ingredienser-summerbreeze{
+    font-size: 100%;
+   }
+   .ingredienser-original{
+    font-size: 100%;
+   }
+   .ingredienser-winterspice{
+    font-size: 100%;
+   }
+   .vinterkampagne-produkttekst{
+    font-size: 110%;
+   }
+   .sommerkampagne-produkttekst{
+    font-size: 110%;
+   } 
+   .info li {
+    margin-left: -7%;
+  }
+  }
+
+@media screen and (max-width: 750px) {
+  .mylinks1 {
+    visibility: hidden;
+  }
+
+  .mylinks2 {
+    visibility: hidden;
+  }
+
+  .mylinks3 {
+    visibility: hidden;
+  }
+
+  .mylinks4 {
+    display: none;
+  }
+
+  .hamburger-none {
+    display: block;
+
+  }
+
+  #nav-item {
+    display: block;
+    padding: 2%;
+  }
+
+  #nav-item div {
+    display: block;
+  }
+
+  .logo {
+    width: 50%;
+  }
+ 
+
+  .infographic1 {
+    width: 100%;
+    display: block;
+  }
+  
+  .infographic2 {
+    display: none;
+    width: 100%;
+  }
+
+  .blacktea{
+    padding-left: 15%;
+    font-size: 110%;
+   }
+  
+   .summerbreeze{
+    padding-left: 11%;
+    font-size: 110% ;
+   }
+  
+   .winterspice{
+    padding-right:11% ;
+    font-size: 110%;
+   }
+  
+   .ingredienser-summerbreeze{
+    font-size: 100%;
+   }
+   .ingredienser-original{
+    font-size: 100%;
+   }
+   .ingredienser-winterspice{
+    font-size: 100%;
+   }
+   .vinterkampagne-produkttekst{
+    font-size: 100%;
+   }
+   .sommerkampagne-produkttekst{
+    font-size: 100%;
+   } 
+
+   .info li {
+    margin-left: -7%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+ /* forside */
+ .velkomsttekst h2{
+  font-size: 30px;
+  padding-left: 30%;
+}
+
+.velkomsttekst p{
+  font-size: 120%;
+}
+
+.info li {
+  margin-left: -7%;
+}
+
+ /* footer */
+ 
+
+.kontakt h1{
+  font-size: 100%;
+}
+
+.kontakt li{
+  font-size: 70%;
+  padding-bottom: 4%;
+}
+.blacktea{
+  padding-left: 15%;
+  font-size: 100%;
+ }
+
+ .summerbreeze{
+  padding-left: 11%;
+  font-size: 100% ;
+ }
+
+ .winterspice{
+  padding-right:11% ;
+  font-size: 100%;
+ }
+
+ .ingredienser-summerbreeze{
+  font-size: 90%;
+ }
+ .ingredienser-original{
+  font-size: 90%;
+ }
+ .ingredienser-winterspice{
+  font-size: 90%;
+ }
+ .vinterkampagne-produkttekst{
+  font-size: 90%;
+ }
+ .sommerkampagne-produkttekst{
+  font-size: 90%;
+ } 
+
+}
+
+@media screen and (max-width: 650px) {
+ /* forside */
+ .velkomsttekst h2{
+  font-size: 30px;
+  padding-left: 30%;
+}
+
+.info li {
+  margin-left: -7%;
+}
+
+.velkomsttekst p{
+  font-size: 120%;
+}
+
+ /* footer */
+.kontakt h1{
+  font-size: 100%;
+}
+
+.kontakt li{
+  font-size: 70%;
+  padding-bottom: 4%;
+}
+.blacktea{
+  padding-left: 15%;
+  font-size: 90%;
+ }
+
+ .summerbreeze{
+  padding-left: 11%;
+  font-size: 90% ;
+ }
+
+ .winterspice{
+  padding-right:11% ;
+  font-size: 90%;
+ }
+
+ .ingredienser-summerbreeze{
+  font-size: 80%;
+ }
+ .ingredienser-original{
+  font-size: 80%;
+ }
+ .ingredienser-winterspice{
+  font-size: 80%;
+ }
+ .vinterkampagne-produkttekst{
+  font-size: 80%;
+ }
+ .sommerkampagne-produkttekst{
+  font-size: 80%;
+ } 
+}
+
+@media screen and (max-width: 600px) {
+ /* forside */
+ .velkomsttekst h2{
+  font-size: 30px;
+  padding-left: 30%;
+}
+.info li {
+  margin-left: -8%;
+}
+
+.velkomsttekst p{
+  font-size: 120%;
+}
+
+ /* footer */
+
+
+.kontakt h1{
+  font-size: 100%;
+}
+
+.kontakt li{
+  font-size: 70%;
+  padding-bottom: 2%;
+}
+.blacktea{
+  padding-left: 15%;
+  font-size: 80%;
+ }
+
+ .summerbreeze{
+  padding-left: 11%;
+  font-size: 80% ;
+ }
+
+ .winterspice{
+  padding-right:11% ;
+  font-size: 80%;
+ }
+
+ .ingredienser-summerbreeze{
+  font-size: 70%;
+ }
+ .ingredienser-original{
+  font-size: 70%;
+ }
+ .ingredienser-winterspice{
+  font-size: 70%;
+ }
+
+ .vinterkampagne-produkttekst{
+  font-size: 70%;
+ }
+ .sommerkampagne-produkttekst{
+  font-size: 70%;
+ } 
+}
+
+@media screen and (max-width: 520px) {
+ /* forside */
+ .velkomsttekst h2{
+  font-size: 30px;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.info li {
+  margin-left: -9%;
+}
+
+.velkomsttekst p{
+  font-size: 120%;
+}
+
+ /* footer */
+ 
+.kontakt h1{
+  font-size: 100%;
+}
+
+.kontakt li{
+  font-size: 70%;
+  padding-bottom: 4%;
+}
+
+.blacktea{
+  padding-left: 15%;
+  font-size: 70%;
+ }
+
+ .summerbreeze{
+  padding-left: 11%;
+  font-size: 70% ;
+ }
+
+ .winterspice{
+  padding-right:11% ;
+  font-size: 70%;
+ }
+
+ .ingredienser-summerbreeze{
+  font-size: 60%;
+ }
+ .ingredienser-original{
+  font-size: 60%;
+ }
+ .ingredienser-winterspice{
+  font-size: 60%;
+ }
+ .vinterkampagne-produkttekst{
+  font-size: 60%;
+ }
+ .sommerkampagne-produkttekst{
+  font-size: 60%;
+ } 
+}
+
+
+@media screen and (max-width: 410px) {
+  /* forside */
+  .velkomsttekst h2{
+    font-size: 30px;
+    padding-left: 30%;
+  }
+  .info li {
+    margin-left: -12%;
+  }
+
+  .velkomsttekst p{
+    font-size: 120%;
+  }
+
+   /* footer */
+
+  .kontakt h1{
+    font-size: 100%;
+  }
+
+  .kontakt li{
+    font-size: 70%;
+    padding-bottom: 4%;
+  }
+  .blacktea{
+    padding-left: 15%;
+    font-size: 60%;
+   }
+  
+   .summerbreeze{
+    padding-left: 11%;
+    font-size: 60% ;
+   }
+
+   .winterspice{
+    padding-right:11% ;
+    font-size: 60%;
+   }
+
+   .ingredienser-summerbreeze{
+    font-size: 50%;
+   }
+   .ingredienser-original{
+    font-size: 50%;
+   }
+   .ingredienser-winterspice{
+    font-size: 50%;
+   }
+   .vinterkampagne-produkttekst{
+    font-size: 50%;
+   }
+   .sommerkampagne-produkttekst{
+    font-size: 50%;
+   } 
+}

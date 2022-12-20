@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinterkampagne</title>
+  <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Her finder du viden om te, 
+    samt vores vinterkamapgne og sommerkampagne. Derudover k
+    an du finde ingredienslister på vores produkter, hvis der skulle være eventuelle allergier.">
+    <meta name="keywords" content="grøn te, sort te, hvid te, sådan laver du te, medova, 
+    smagsvarianter, medova ny emballage,summer breeze, winter spice, te ingredienser, 
+    hvordan produceres te, teplanter, ingredienser medova, danmark, medova te "> 
+    <meta name="author" content="Mette Buch Kroun Laursen">
+    <meta name="geo region" content="Denmark">
+    <meta name="geo.placename" content="Århus">
+    <meta property="og:type" content="website">
+    <meta property="site_name" content="Medova">
+<!--favicon-->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<!--header-->
+  <header>
+     <nav class="topnav">
+      <a class="mylinks mylinks1" href="te.html" class="mylinks mylinks1">Te </a>
+      <a class="mylinks mylinks2" href="sommerkampagne.html" >Sommerkampagne</a>
+      <a class="logo-a" href="index.html"><img class="logo" src="img/logo-medova.png" alt="logo-medova"></a>
+      <a class="mylinks mylinks3" href="vinterkampagne.html">Vinterkampagne</a>
+      <div class="produkter-wrapper">
+         <a class="mylinks mylinks4" href="voresprodukter.html">Vores Produkter</a>
+         <button class="hamburger-none" onclick="burgerfunction()"><img src="img/burger.png" alt="menu"></button>
+      </div>
+     </nav>
+  </header> 
+<!--burgermenu-->
+  <main>
+   <div id="nav-item">
+       <div><a href="te.html">Te</a></div>
+       <div><a href="sommerkampagne.html">Sommerkampagne</a></div>
+       <div><a href="vinterkampagne.html">Vinterkampagne</a></div>
+       <div><a href="voresprodukter.html">Vores produkter</a></div>
+   </div> 
+
+<!--javascript-->
+     <script>
+         function burgerfunction() {
+            var x = document.getElementById("nav-item");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+             } else {
+                x.style.display = "block";
+            }
+         }
+     </script>
+         <br>
+<!--kampagnebillede-->
+<section class="vinterkampagnebanner">
+    <img src="img/julekampagne.png" alt="medova te julekampagne vinterprodukt winter spice" class="julekampagnebanner">
+</section>
+<!--produktbillede-->
+<section class="vinterkampagne-vinterprodukt"> 
+    <img src="img/julepakke.png" alt="medova te vinterprodukt winter spice" class="juleprodukt">
+</section>
+<!--produkttekst-->
+<section class="vinterkampagne-produkttekst">
+    <p>En beroligende te med dominerende smag af appelsin og kanel. 
+        Den kan nydes til en julefilm eller i tilstedeværelsen af familie og venner.
+        Ingredienser: økologisk sort te, hibiscus, nellike, appelsinskal, 
+        andler, hyben, aroma (kanel, vanilje, appelsin, nellike,
+        enebær, solbær, vanilje, morgenfrueblomst, kokos, fennikel. </p>
+    </section>
+  </main>
+
+<!--footer-->
+  <footer>
+     <section class="kontakt">
+       <h1>Kontakt</h1>
+     </section>
+       <ul class="info">
+           <li>Mail: medova@gmail.com</li>
+           <li>Instagram: Medova-te</li>
+           <li>Facebook: Medova-te</li>
+           <li>Telefonnummer: +45 00000000</li>
+       </ul>
+           <section class="footer-logo">
+               <img src="img/logo-medova.png" alt="footer-logo" id="logo-id">
+             
+           
+        </section>
+  </footer>
+ 
+ </body>
+ </html>
